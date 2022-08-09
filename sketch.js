@@ -16,7 +16,7 @@ function preload(){
 
 
 function setup() {
-	createCanvas(1600, 700);
+	createCanvas(windowWidth, windowHeight);
 	rectMode(CENTER);
 
 	engine = Engine.create();
@@ -65,7 +65,7 @@ image(paperImg,ball.position.x,ball.position.y,radius,radius);
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-		Matter.Body.applyForce(ball,ball.position,{x:85,y:-85});
+		Matter.Body.applyForce(ball,ball.position,{x:95,y:-85});
     
   	}
 }
